@@ -28,6 +28,13 @@ components:
         - name: web
           targetPort: 8080
 commands:
+  - id: sleeeep
+    exec:
+      commandLine: tail -f /dev/null
+      group:
+        kind: build
+        isDefault: true
+      component: py-web
   - id: pip-install-requirements
     exec:
       commandLine: pip install --user -r requirements.txt
