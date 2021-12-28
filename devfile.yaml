@@ -35,12 +35,6 @@ commands:
         kind: build
         isDefault: true
       component: py-web
-  - id: pip-install-requirements
-    exec:
-      commandLine: pip install --user -r requirements.txt
-      group:
-        kind: build
-      component: py-web
   - id: run-app
     exec:
       commandLine: "python app.py"
