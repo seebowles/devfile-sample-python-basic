@@ -40,7 +40,6 @@ commands:
       commandLine: pip install --user -r requirements.txt
       group:
         kind: build
-        isDefault: true
       component: py-web
   - id: run-app
     exec:
